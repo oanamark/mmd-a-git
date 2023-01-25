@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Mobile First</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<!-- Header Showcase -->
+<!-- header#showcase.grid -->
+<header id="showcase" class="grid">
+    <!-- faded background image, in order not to fade out the text we have to added to a different element, we are not going to add the background image to the header -->
+    <div class="bg-image"></div>
+    <!-- leave it empty -->
+    <div class="content-wrap">
+        <h1>Welcome to Acme Web Solutions</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis expedita iste eos earum architecto deleniti mollitia ullam quo amet odit!</p>
+        <!-- a.btn as button, #section-b, so when we click on the button Read More it will scroll down to the named section  -->
+        <a href="#section-b" class="btn">Read More</a>
+    </div>
+</header>
+
+
+<!-- Main Area -->
+<!-- main#main. # gives automatically id and . gives class-->
+
+<main id="main">
+    <!-- Section A -->
+    <section id="section-a" class="grid">
+        <!-- container for grid -->
+        <div class="content-wrap">
+            <h2 class="content-title">Web & Application Development</h2>
+            <div class="content-text">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa a tenetur doloremque eum! Maiores nisi laudantium optio veniam ipsum, assumenda nobis aliquid vitae praesentium dolores veritatis odit, atque, reiciendis repudiandae velit quos mollitia. Quas optio provident facilis nesciunt, sed at.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section B -->
+    <section id="section-b" class="grid">
+        <ul>
+            <li>
+                <div class="card">
+                <img src="./images/pexels-lukas-574077.jpg" alt="">
+                    <div class="card-content">
+                        <h3 class="card-title">Web Development</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur unde molestiae saepe nam doloribus nobis recusandae eos magnam iusto vero!</p>
+                    </div>
+                </div>
+            </li>
+
+            <li>
+                <div class="card">
+                <img src="./images/pexels-photo-261628.jpeg" alt="">
+                    <div class="card-content">
+                        <h3 class="card-title">Mobile Applications</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur unde molestiae saepe nam doloribus nobis recusandae eos magnam iusto vero!</p>
+                    </div>
+                </div>
+            </li>
+
+            <li>
+                <div class="card">
+                <img src="./images/pexels-pixabay-265087.jpg" alt="">
+                <div class="card-content">
+                    <h3 class="card-title">Tech Marketing</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur unde molestiae saepe nam doloribus nobis recusandae eos magnam iusto vero!</p>
+                </div>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Section C -->
+     <section id="section-c" class="grid">
+        <div class="content-wrap">
+            <h2 class="content-title">We handle all of your digital needs</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae laborum doloribus ab! Deserunt alias minus sit dolores vel consequuntur blanditiis.</p>
+        </div>
+     </section>
+
+     <!-- Section D -->
+     <section id="section-d" class="grid">
+        <div class="box">
+            <h2 class="content-title">Contact Us</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem ea harum adipisci, nemo voluptas necessitatibus! Dignissimos quod ut sapiente aperiam.</p>
+            <p>contact@acmewebsolutions.test</p>
+        </div>
+        <div class="box">
+            <h2 class="content-title">About Our Company</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas sint, enim, facilis laboriosam nihil impedit reiciendis facere ut odit nobis ipsam dolor sunt debitis animi? Eos dignissimos beatae facilis id?</p>
+        </div>
+     </section>
+
+</main>
+
+<!-- Footer -->
+<footer id="main-footer" class="grid">
+    <div>Acme Web Solutionsh1</div>
+    <div>Project <a href="http://traversymedia.com" target="_blank">Traversy Media</a></div>
+</footer>
+
+</body>
+</html>
